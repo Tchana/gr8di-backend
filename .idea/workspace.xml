@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72ad07c9-c0c7-44e0-8a72-093cd2156787" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/resources/api-spec/examples/card.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/resources/api-spec/libraries/types/Card.raml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/api-spec/libraries/types/Member.raml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/api-spec/libraries/types/Page.raml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/resources/api-spec/libraries/types/Pitch.raml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/resources/api-spec/libraries/types/Section.raml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/api-spec" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/api-spec" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/api-spec/api.raml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/api-spec/api.raml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/api-spec/examples/create-customer.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/api-spec/examples/create-email.json" beforeDir="false" />
@@ -35,8 +32,8 @@
       <change beforePath="$PROJECT_DIR$/src/resources/api-spec/libraries/types/Preferences.raml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/api-spec/libraries/types/Principal.raml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/api-spec/libraries/types/Report.raml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/api-spec/libraries/types/Tenant.raml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/api-spec/libraries/types/User.raml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/api-spec/libraries/types/Page.raml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/api-spec/libraries/types/Tenant.raml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/api-spec/libraries/types/Member.raml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/api-spec/libraries/types/User.raml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/api-spec/libraries/types/problem.raml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/api-spec/libraries/types/types.raml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/api-spec/libraries/types/types.raml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/api-spec/securitySchemes/Basic.raml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/api-spec/securitySchemes/Basic.raml" afterDir="false" />
@@ -752,6 +749,57 @@
               <item name="gr8di-backend" type="b2602c69:ProjectViewProjectNode" />
               <item name="gr8di-backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
+            <path>
+              <item name="gr8di-backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gr8di-backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gr8di-backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gr8di-backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gr8di-backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gr8di-backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="api-spec" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gr8di-backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gr8di-backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="api-spec" type="462c0819:PsiDirectoryNode" />
+              <item name="libraries" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gr8di-backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gr8di-backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="api-spec" type="462c0819:PsiDirectoryNode" />
+              <item name="libraries" type="462c0819:PsiDirectoryNode" />
+              <item name="types" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gr8di-backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gr8di-backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="api-spec" type="462c0819:PsiDirectoryNode" />
+              <item name="securitySchemes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gr8di-backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gr8di-backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="api-spec" type="462c0819:PsiDirectoryNode" />
+              <item name="traits" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -762,7 +810,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536056384705" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536071367812" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -801,7 +849,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1600" height="873" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26546392" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
