@@ -1,46 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="72ad07c9-c0c7-44e0-8a72-093cd2156787" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/resources/api-spec/examples/card.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/api-spec/libraries/types/Card.raml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/api-spec/libraries/types/Page.raml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/api-spec/libraries/types/Pitch.raml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/api-spec/libraries/types/Section.raml" afterDir="false" />
+    <list default="true" id="eb1db4c7-be5e-49f8-9b61-254817be070e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.9/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.9/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.9/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.9/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/api-spec/api.raml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/api-spec/api.raml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/api-spec/examples/create-customer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/api-spec/examples/create-email.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/api-spec/examples/customer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/api-spec/examples/customers.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/api-spec/examples/emails.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/api-spec/examples/emails.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/api-spec/examples/error.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/api-spec/examples/error.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/api-spec/examples/loan.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/api-spec/examples/login-user.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/api-spec/examples/login-user.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/api-spec/examples/preferences.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/api-spec/examples/principal.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/api-spec/examples/principal.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/api-spec/examples/problem.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/api-spec/examples/register-user.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/api-spec/examples/report.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/api-spec/examples/tenant.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/api-spec/examples/user.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/api-spec/examples/user.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/api-spec/libraries/types/Customer.raml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/api-spec/libraries/types/Email.raml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/api-spec/libraries/types/Email.raml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/api-spec/libraries/types/Error.raml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/api-spec/libraries/types/Error.raml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/api-spec/libraries/types/Loan.raml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/api-spec/libraries/types/Login.raml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/api-spec/libraries/types/Notification.raml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/api-spec/libraries/types/Notification.raml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/api-spec/libraries/types/Preferences.raml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/api-spec/libraries/types/Principal.raml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/api-spec/libraries/types/Report.raml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/api-spec/libraries/types/Tenant.raml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/api-spec/libraries/types/Member.raml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/api-spec/libraries/types/User.raml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/api-spec/libraries/types/problem.raml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/api-spec/libraries/types/types.raml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/api-spec/libraries/types/types.raml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/api-spec/securitySchemes/Basic.raml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/api-spec/securitySchemes/Basic.raml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/api-spec/todo.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/api-spec/traits/pageable.raml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/api-spec/traits/pageable.raml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/api-spec/traits/searchable.raml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/api-spec/traits/searchable.raml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/api-spec/traits/sortable.raml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/api-spec/traits/sortable.raml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -58,60 +25,43 @@
     <session id="330218088">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
-          <entry key="project.open.time.11" value="1" />
-          <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.20" value="1" />
-          <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.37" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="1" />
-          <entry key="json" value="9" />
-          <entry key="raml" value="20" />
+          <entry key="raml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JSON" value="9" />
-          <entry key="PLAIN_TEXT" value="17" />
-          <entry key="Raml" value="4" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Raml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="json" value="2" />
-          <entry key="raml" value="812" />
+          <entry key="gitignore" value="6" />
+          <entry key="raml" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JSON" value="2" />
-          <entry key="PLAIN_TEXT" value="598" />
-          <entry key="Raml" value="214" />
+          <entry key="PLAIN_TEXT" value="6" />
+          <entry key="Raml" value="6" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/resources/api-spec/api.raml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="40" column="53" selection-start-line="40" selection-start-column="53" selection-end-line="40" selection-end-column="53" />
+            <state relative-caret-position="420">
+              <caret line="259" column="17" lean-forward="true" selection-start-line="259" selection-start-column="17" selection-end-line="259" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -713,20 +663,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/resources/api-spec/api.raml" />
-        <option value="$PROJECT_DIR$/src/resources/api-spec/libraries/types/Content.raml" />
-        <option value="$PROJECT_DIR$/src/resources/api-spec/libraries/types/Section.raml" />
-        <option value="$PROJECT_DIR$/src/resources/api-spec/libraries/types/Card.raml" />
-        <option value="$PROJECT_DIR$/src/resources/api-spec/libraries/types/Member.raml" />
-        <option value="$PROJECT_DIR$/src/resources/api-spec/libraries/types/Pitch.raml" />
-        <option value="$PROJECT_DIR$/src/resources/api-spec/libraries/types/Notification.raml" />
-        <option value="$PROJECT_DIR$/src/resources/api-spec/libraries/types/types.raml" />
-        <option value="$PROJECT_DIR$/src/resources/api-spec/libraries/types/Page.raml" />
-        <option value="$PROJECT_DIR$/src/resources/api-spec/examples/error.json" />
-        <option value="$PROJECT_DIR$/src/resources/api-spec/libraries/types/Error.raml" />
-        <option value="$PROJECT_DIR$/src/resources/api2.raml" />
-        <option value="$PROJECT_DIR$/src/resources/api-spec/examples/card.json" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/resources/api-spec/api.raml" />
       </list>
     </option>
   </component>
@@ -736,12 +674,14 @@
     <option name="width" value="1616" />
     <option name="height" value="876" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -767,60 +707,18 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="api-spec" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="gr8di-backend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gr8di-backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="api-spec" type="462c0819:PsiDirectoryNode" />
-              <item name="libraries" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gr8di-backend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gr8di-backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="api-spec" type="462c0819:PsiDirectoryNode" />
-              <item name="libraries" type="462c0819:PsiDirectoryNode" />
-              <item name="types" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gr8di-backend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gr8di-backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="api-spec" type="462c0819:PsiDirectoryNode" />
-              <item name="securitySchemes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gr8di-backend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gr8di-backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="api-spec" type="462c0819:PsiDirectoryNode" />
-              <item name="traits" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536071367812" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
     <property name="show.migrate.to.gradle.popup" value="false" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/resources/api-spec" />
-    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -839,24 +737,29 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="72ad07c9-c0c7-44e0-8a72-093cd2156787" name="Default Changelist" comment="" />
-      <created>1535988411958</created>
+      <changelist id="eb1db4c7-be5e-49f8-9b61-254817be070e" name="Default Changelist" comment="" />
+      <created>1536072267818</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1535988411958</updated>
+      <updated>1536072267818</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1600" height="873" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26546392" />
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32968536" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Build" weight="0.32968536" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -864,154 +767,34 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.33242133" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Build" order="10" weight="0.32968536" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Gradle" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Flutter Inspector" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Flutter Outline" />
+      <window_info anchor="right" id="Maven Projects" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Gradle" order="5" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Flutter Outline" order="8" />
-      <window_info anchor="right" id="Flutter Inspector" order="9" />
-      <window_info anchor="right" id="Maven Projects" order="10" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/resources/api-spec/examples/create-email.json" />
-    <entry file="file://$PROJECT_DIR$/src/resources/api-spec/libraries/types/Email.raml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/api-spec/examples/login-user.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/api-spec/examples/principal.json">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="22" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/api-spec/examples/user.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/api-spec/traits/pageable.raml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/api-spec/traits/searchable.raml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="15" lean-forward="true" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/api-spec/traits/sortable.raml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/api-spec/securitySchemes/Basic.raml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/api-spec/examples/create-customer.json" />
-    <entry file="file://$PROJECT_DIR$/src/resources/api-spec/libraries/types/Member.raml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="15" lean-forward="true" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/api-spec/libraries/types/Section.raml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="12" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/api-spec/libraries/types/Pitch.raml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/api-spec/libraries/types/Notification.raml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/api-spec/examples/error.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/api-spec/libraries/types/Error.raml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/api-spec/libraries/types/Card.raml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/api-spec/examples/card.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/api-spec/libraries/types/Page.raml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/api-spec/libraries/types/types.raml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+        <state relative-caret-position="240">
+          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/resources/api-spec/api.raml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="40" column="53" selection-start-line="40" selection-start-column="53" selection-end-line="40" selection-end-column="53" />
+        <state relative-caret-position="420">
+          <caret line="259" column="17" lean-forward="true" selection-start-line="259" selection-start-column="17" selection-end-line="259" selection-end-column="17" />
         </state>
       </provider>
     </entry>

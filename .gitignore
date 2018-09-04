@@ -26,6 +26,7 @@ target
 /build
 /grails.iws
 .gradle
+.idea
 .DS_Store
 .classpath
 .project
