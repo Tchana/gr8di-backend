@@ -1,0 +1,28 @@
+{
+  "emails": [
+    {
+      "id": "493474a4-2e93-11e7-93ae-92361f002671",
+      "from": "info@afgrey.com",
+      "to": "jdoe@afgrey.com",
+      "body": "here is a sample body for the email. this can be simple text or html",
+      "subject": "here is the email subject",
+      "status": "delivered"
+    },
+    {
+      "id": "5373c514-d2e9-451b-b2be-6a44d92a8305",
+      "from": "info@afgrey.com",
+      "to": "jdoe@afgrey.com",
+      "body": "here is a sample body for the email. this can be simple text or html",
+      "subject": "here is the email subject",
+      "status": "delivered"
+    },
+    {
+      "id": "cc9ebe2f-2403-4fa8-aeb2-f7f3a9f5abbe",
+      "from": "info@afgrey.com",
+      "to": "jdoe@afgrey.com",
+      "body": "here is a sample body for the email. this can be simple text or html",
+      "subject": "here is the email subject",
+      "status": "error"
+    }
+  ]
+}

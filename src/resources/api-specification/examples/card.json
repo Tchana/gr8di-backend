@@ -1,0 +1,7 @@
+"card": {
+  "id?": "string",
+  "imgUrl?": "string",
+  "header?": "string",
+  "description?": "string",
+  "footer?": "string"
+}

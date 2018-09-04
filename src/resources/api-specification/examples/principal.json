@@ -1,0 +1,8 @@
+{
+  "authToken": "string",
+  "user": {
+    "id": "someid10928",
+    "email": "johndoe@afgrey.com",
+    "password": "somePassword"
+  }
+}

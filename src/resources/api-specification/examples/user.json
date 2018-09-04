@@ -1,0 +1,10 @@
+{
+   "id": "string",
+   "name": "string",
+   "company": "object",
+   "email": "string",
+   "address": "string",
+   "password": "string",
+   "dateOfBirth": "2002-10-02T10:00:00-05:00",
+   "status": "active"
+}
