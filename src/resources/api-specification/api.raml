@@ -111,24 +111,24 @@ traits:
               description: gets all messages that match query parameter
               queryParameters:
                 senderEmail:
-                      type: string
-                      required: true
-                      example: "jobs@awesome.io"
+                  type: string
+                  required: true
+                  example: "jobs@awesome.io"
                 message:
-                      type: string
-                      required: true
-                      example: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec vehicula dolor, sit amet molestie ..."
+                  type: string
+                  required: true
+                  example: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec vehicula dolor, sit amet molestie ..."
                 topic:
-                      type: string
-                      required: true
-                      example: "Neque porro quisquam"
+                  type: string
+                  required: true
+                  example: "Neque porro quisquam"
 
                 responses:
-                        200:
-                            body:
-                                application/json:
-                                    types: !include examples/Email.json
-                                    example: !include examples/emails.json
+                  200:
+                    body:
+                      application/json:
+                        types: !include examples/Email.json
+                        example: !include examples/emails.json
             post:
               description: creates a new message
               body:
@@ -161,13 +161,13 @@ traits:
 /jobs:
 	description: Job entity
 	get:
-        description: Get all job posts
-        response:
-          200:
-           description: Ok
+      description: Get all job posts
+      response:
+        200:
+         description: Ok
 
-          404:
-           description: Not found
+        404:
+         description: Not found
 	post:
 	    description: Creates new Job
         body:
@@ -187,52 +187,47 @@ traits:
       get:
       securedBy: basicAuth
         description: Get a job with jobId = {jobId}
-          body:
-            application/json:
-                type: message
-          responses:
-            200:
-               body:
-                  application/json:
-                     type: !include libraries/types/Job.raml
-                     example: !include examples/job.json
-            404:
-               body:
-                   application/json:
-                      type: !include libraries/types/Error.raml
-                      example: !include examples/error.json
+        body:
+          application/json:
+              type: message
+        responses:
+          200:
+             body:
+                 application/json:
+                    type: !include libraries/types/Error.raml
+                    example: !include examples/error.json
 
       put:
         securedBy: basicAuth
-              description: Updates a Job
+          description: Updates a Job
+          body:
+            type: !include libraries/types/Job.raml
+            example: !include examples/job.json
+          responses:
+            202:
+              description: Accepted
+            404:
+              description: Not found
               body:
-                type: !include libraries/types/Job.raml
-                example: !include examples/job.json
-              responses:
-                202:
-                  description: Accepted
-                404:
-                  description: Not found
-                  body:
-                    application/json:
-                      type: !include libraries/types/Error.raml
-                      example: !include examples/error.json
+                application/json:
+                  type: !include libraries/types/Error.raml
+                  example: !include examples/error.json
 
       delete:
         securedBy: basicAuth
-              description: Delete Job
+          description: Delete Job
+          body:
+            type: !include libraries/types/Job.raml
+            example: !include examples/job.json
+          responses:
+            202:
+              description: Accepted
+            404:
+              description: Not found
               body:
-                type: !include libraries/types/Job.raml
-                example: !include examples/job.json
-              responses:
-                202:
-                  description: Accepted
-                404:
-                  description: Not found
-                  body:
-                    application/json:
-                      type: !include libraries/types/Error.raml
-                      example: !include examples/error.json
+                application/json:
+                  type: !include libraries/types/Error.raml
+                  example: !include examples/error.json
 
 /reports:
   post:
