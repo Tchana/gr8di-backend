@@ -1,0 +1,7 @@
+import gr8di.backend.Message
+
+model {
+	Message message
+}
+
+json tmpl.message(message)

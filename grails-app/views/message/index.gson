@@ -1,0 +1,8 @@
+import gr8di.backend.Message
+
+model {
+	Iterable<Message> messageList
+}
+
+json tmpl.message(messageList ?: [])
+

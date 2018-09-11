@@ -1,0 +1,7 @@
+import gr8di.backend.Message
+
+model {
+	Message message
+}
+
+json g.render(message, [resolveTemplate: false])
