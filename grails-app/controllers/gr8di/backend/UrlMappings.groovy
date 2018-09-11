@@ -13,5 +13,11 @@ class UrlMappings {
         "/"(controller: 'application', action:'index')
         "500"(view: '/error')
         "404"(view: '/notFound')
+
+        delete "/messages/$id"(controller:'message', action:"delete")
+        get "/messages"(controller:'message', action:"index")
+        get "/messages/$id"(controller:'message', action:"show")
+        post "/messages"(controller:'message', action:"save")
+        put "/messages/$id"(controller:'message', action:"update")
     }
 }
