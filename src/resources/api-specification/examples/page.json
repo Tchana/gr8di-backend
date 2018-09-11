@@ -6,7 +6,6 @@
     "title":"Groovy diversity initiative",
     "subtitle?":"building a more diverse and more ...",
     "imgUrl?":"img/gr8dicon/gr8di-icon.png",
-
     "sections":{
       "id":"anyotherId657",
       "title":"projects",
@@ -18,10 +17,7 @@
         "title?":"education",
         "description?":"lorem ipsum valar morgulis ...",
         "action?":"redirect"
-
       },
-
-
       "cards":{
         "id?": "anyId55925",
         "imgUrl?": "img/gr8dicon/gr8di-icon.png",
@@ -29,8 +25,6 @@
         "description?": "lorem ipsum dolor ...",
         "footer?": "string"
       },
-
-
       "members":{
         "id?": "anId5686",
         "imgUrl":"img/gr8dicon/gr8di-icon.png",
@@ -39,8 +33,6 @@
         "role":"gr8di developer"
       }
     },
-
-
     "status":"active"
   }
 }

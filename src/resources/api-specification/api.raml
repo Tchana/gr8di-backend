@@ -158,53 +158,16 @@ traits:
           securedBy: basicAuth
           description: delete message by id
 
-
-
-
 /jobs:
 	description: Job entity
 	get:
         description: Get all job posts
-                emailAddress:
-                    example:"jobs@awesome.io"
-                    type: string
-                    required: true
-                companyName:
-                    example:"Awesome Inc"
-                    type: string
-                    required: false
-                jobLocation:
-                    example:"Remote"
-                    type: string
-                    required: false
-                jobTitle:
-                example: "Grails developer"
-                    type: string
-                    required: false
-                jobExperienceLevel:
-                    example: "entry level"
-                    type: string
-                    required: true
-                jobType:
-                    example: "part-time"
-                    type: string
-                    required: true
-                tags:
-                    example: "groovy, grails, backend"
-                    type: string
-                    required: false
-                salaryrangeFrom:
-                    type: float
-                    required: true
-                    example: "$1000"
-                salaryrangeTo:
-                    type: float
-                    required: true
-                    example: "$3000"
-                jobDescription:
-                    example: "As a grails developer for Awesome Inc your responsibilities will include..."
-                    type: Long
-                    required: true
+        response:
+          200:
+           description: Ok
+
+          404:
+           description: Not found
 	post:
 	    description: Creates new Job
         body:
@@ -219,9 +182,6 @@ traits:
                 application/json:
                   type: !include libraries/types/Error.raml
                   example: !include examples/error.json
-
-
-
 
 	/{jobId}:
       get:
@@ -257,7 +217,6 @@ traits:
                     application/json:
                       type: !include libraries/types/Error.raml
                       example: !include examples/error.json
-
 
       delete:
         securedBy: basicAuth
