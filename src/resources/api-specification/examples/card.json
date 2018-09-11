@@ -1,7 +1,9 @@
-"card": {
-  "id?": "string",
-  "imgUrl?": "string",
-  "header?": "string",
-  "description?": "string",
-  "footer?": "string"
+{
+  "card": {
+    "id?": "anyId55925",
+    "imgUrl?": "img/gr8dicon/gr8di-icon.png",
+    "header?": "Teams",
+    "description?": "lorem ipsum dolor ...",
+    "footer?": "string"
+  }
 }

@@ -33,7 +33,7 @@ traits:
           400:
             body:
               application/json:
-                type: !include libraries/types/error.raml
+                type: !include libraries/types/Error.raml
                 example: !include examples/error.json
 
   /{id}:
@@ -51,15 +51,15 @@ traits:
           400:
             body:
               application/json:
-                type: !include libraries/types/error.raml
+                type: !include libraries/types/Error.raml
                 example: !include examples/error.json
 
     put:
       securedBy: basicAuth
-      description: Creates a new page
+      description: Update a new page
       body:
         type: !include libraries/types/Page.raml
-        example: !include examples/Page.json
+        example: !include examples/page.json
       responses:
         202:
           description: Accepted
@@ -67,15 +67,15 @@ traits:
           description: Bad Request.
           body:
             application/json:
-              type: !include libraries/types/error.raml
+              type: !include libraries/types/Error.raml
               example: !include examples/error.json
 
     delete:
       securedBy: basicAuth
-      description: Creates a new page
+      description: Delete page
       body:
         type: !include libraries/types/Page.raml
-        example: !include examples/Page.json
+        example: !include examples/page.json
       responses:
         202:
           description: Accepted
@@ -83,7 +83,7 @@ traits:
           description: Bad Request.
           body:
             application/json:
-              type: !include libraries/types/error.raml
+              type: !include libraries/types/Error.raml
               example: !include examples/error.json
 
   post:
@@ -91,7 +91,7 @@ traits:
     description: Creates a new page
     body:
       type: !include libraries/types/Page.raml
-      example: !include examples/Page.json
+      example: !include examples/page.json
     responses:
       202:
         description: Accepted
@@ -99,7 +99,7 @@ traits:
         description: Bad Request.
         body:
           application/json:
-            type: !include libraries/types/error.raml
+            type: !include libraries/types/Error.raml
             example: !include examples/error.json
 
 /messages:
@@ -107,166 +107,132 @@ traits:
         collection:
             description: Contains all sets of messages
             get:
-                description: gets all messages that match query parameter 
-                queryParameters:
-                    access_token:
-                        description: "The access token provided by the authentication application"
-                        example: AABBCCDD... 
-                        required: true
-                        type: string
-
-                    senderEmail:
-                        type: string
-                        required: true
-                        example: "jobs@awesome.io"
-                    message:
-                        type: string
-                        required: true
-                        example: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec vehicula dolor, sit amet molestie ..."
-                    topic:
-                        type: string
-                        required: true
-                        example: "Neque porro quisquam"
+              securedBy: basicAuth
+              description: gets all messages that match query parameter
+              queryParameters:
+                senderEmail:
+                      type: string
+                      required: true
+                      example: "jobs@awesome.io"
+                message:
+                      type: string
+                      required: true
+                      example: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec vehicula dolor, sit amet molestie ..."
+                topic:
+                      type: string
+                      required: true
+                      example: "Neque porro quisquam"
 
                 responses:
                         200:
                             body:
-                                application/json: 
-                                    example: |
-                                        {
-                                            "messages": [
-                                                {
-                                                    "messageId": "001",
-                                                    "message": "Hello world"
-                                                },
-                                                {
-                                                    "messageId": "002",
-                                                    "message": "Great job"
-                                                }
-                                            ]
-                                        }
+                                application/json:
+                                    types: !include examples/Email.json
+                                    example: !include examples/emails.json
             post:
-                description: creates a new message 
-                body:
-                    application/json: 
-                                type: message
-                responses:
-                    202:
-                        body:
-                            application/json: 
-                                type: message
-                                example: |
-                                    {"message":"message has properly been entered..."}
-               
+              description: creates a new message
+              body:
+                application/json:
+                  type: !include libraries/types/Email.raml
+              responses:
+                  202:
+                      body:
+                          application/json:
+                              type: !include libraries/types/Email.raml
+                              example: !include examples/emails.json
 	/{messageId}:
-        collection-item:
-            get:
-                description: gets a particular message by its id
-                    access_token:
-                        description: "The access token provided by the authentication application"
-                        example: AABBCCDD 
-                        required: true
-                        type: string
-                responses:
-                    200:
-                        body:
-                            application/json: 
-                                example: |
-                                    {
-                                        "message": {
-                                                "messageId": "001",
-                                                "message": "Hello world"
-                                            }
-                                    }
-                    404:
-                        body:
-                            application/json:
-                                example:
-                                    { 
-                                        "status":"Not Found"
-                                    }
-            put:
-            delete:
-
-
-
+      collection-item:
+        get:
+          securedBy: basicAuth
+          description: gets a particular message by its id
+          responses:
+            200:
+              body:
+                application/json:
+                  example: !include examples/emails.json
+            404:
+              body:
+                application/json:
+                  example:!include examples/error.json
+        delete:
+          securedBy: basicAuth
+          description: delete message by id
 
 /jobs:
 	description: Job entity
 	get:
         description: Get all job posts
-            queryParameters:
-                access_token:
-                    description: "The access token provided by the authentication application"
-                    example: AABBCCDD 
-                    required: true
-                    type: string
-                emailAddress:
-                    example:"jobs@awesome.io"
-                    type: string
-                    required: true
-                companyName:
-                    example:"Awesome Inc"
-                    type: string
-                    required: false
-                jobLocation:
-                    example:"Remote"
-                    type: string
-                    required: false
-                jobtitle:
-                example: "Grails developer"
-                    type: string
-                    required: false
-                jobExperienceLevel:
-                    example: "entry level"
-                    type: string
-                    required: true
-                jobType:
-                    example: "part-time"
-                    type: string
-                    required: true
-                tags:
-                    example: "groovy, grails, backend"
-                    type: string
-                    required: false
-                salaryrangeFrom:
-                    type: float
-                    required: true
-                    example: "$1000"
-                salaryrangeTo:
-                    type: float
-                    required: true
-                    example: "$3000"
-                jobDescription:
-                    example: "As a grails developer for Awesome Inc your responsibilities will include..."
-                    type: Long
-                    required: true
+        response:
+          200:
+           description: Ok
+
+          404:
+           description: Not found
 	post:
+	    description: Creates new Job
+        body:
+          type: !include libraries/types/Job.raml
+            example: !include examples/job.json
+        responses:
+          202:
+            description: Accepted
+          400:
+            description: Bad Request.
+              body:
+                application/json:
+                  type: !include libraries/types/Error.raml
+                  example: !include examples/error.json
+
 	/{jobId}:
       get:
+      securedBy: basicAuth
         description: Get a job with jobId = {jobId}
-        body:
+          body:
             application/json:
                 type: message
-        responses:
+          responses:
             200:
-                body:
-                    application/json:
-                        example: |
-                            {
-                                "message":"Job properly entered"
-                            }
-
-             404:
-                body:
-                        application/json:
-                            example:
-                                {
-                                    "status":"Not Found"
-                                }
+               body:
+                  application/json:
+                     type: !include libraries/types/Job.raml
+                     example: !include examples/job.json
+            404:
+               body:
+                   application/json:
+                      type: !include libraries/types/Error.raml
+                      example: !include examples/error.json
 
       put:
+        securedBy: basicAuth
+              description: Updates a Job
+              body:
+                type: !include libraries/types/Job.raml
+                example: !include examples/job.json
+              responses:
+                202:
+                  description: Accepted
+                404:
+                  description: Not found
+                  body:
+                    application/json:
+                      type: !include libraries/types/Error.raml
+                      example: !include examples/error.json
+
       delete:
+        securedBy: basicAuth
+              description: Delete Job
+              body:
+                type: !include libraries/types/Job.raml
+                example: !include examples/job.json
+              responses:
+                202:
+                  description: Accepted
+                404:
+                  description: Not found
+                  body:
+                    application/json:
+                      type: !include libraries/types/Error.raml
+                      example: !include examples/error.json
 
 /reports:
   post:
@@ -277,21 +243,14 @@ traits:
           200:
             body:
               application/json:
-                example: |
-                  {
-                    "stats": [
-                      {
-                        "statsId":"s5846d845"
-                        "stats":"(statistics for a page)"
-                      }
-                    ]
-                  }
+                example: !include examples/stats.json
+
 
           404:
             body:
               application/json:
-                example:
-                  {
-                    "status":"Not Found"
-                  }
-put:
+                example: !include examples/error.json
+
+  put:
+
+

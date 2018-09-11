@@ -1,0 +1,29 @@
+{
+  "sections":{
+    "id":"anyotherId657",
+    "title":"projects",
+    "description":"lorem ipsum dolor ...",
+    "pitches":{
+      "id?":"someId6518",
+      "imgUrl?":"img/gr8dicon/gr8di-icon.png",
+      "icon?":"img/gr8dicon/anyicon.png",
+      "title?":"education",
+      "description?":"lorem ipsum valar morgulis ...",
+      "action?":"redirect"
+    },
+    "cards":{
+      "id?": "anyId55925",
+      "imgUrl?": "img/gr8dicon/gr8di-icon.png",
+      "header?": "Teams",
+      "description?": "lorem ipsum dolor ...",
+      "footer?": "string"
+    },
+    "members":{
+      "id?": "anId5686",
+      "imgUrl":"img/gr8dicon/gr8di-icon.png",
+      "name":"John doe",
+      "handle":"@joedoer",
+      "role":"gr8di developer"
+    }
+  }
+}
