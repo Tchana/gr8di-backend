@@ -11,7 +11,7 @@ class Message {
     Date dateSent = new Date()
 
     static constraints = {
-        senderEmail blank:false
+        senderEmail blank:false, email: true
         topic blank:false
         messageBody blank:false
         dateSent blank:false
