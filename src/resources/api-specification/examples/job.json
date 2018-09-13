@@ -1,15 +1,15 @@
 {
   "job":{
-    "id?":"anyid2479",
+    "id?":"anyId2479",
     "emailAddress": "jobs@awesome.io",
     "companyName?": "Awesome Inc",
-    "jobLocatio?": "Remote",
+    "jobLocation?": "Remote",
     "jobTitle?": "Grails Developer",
     "jobExperienceLevel": "Entry level",
     "jobType": "part-time",
     "tags?":"groovy,grails, backend",
-    "salaryrangeFrom": "float",
-    "salaryrangeTo": "float",
+    "salaryRangeFrom": "float",
+    "salaryRangeTo": "float",
     "jobDescription" : "Lorem ipsum dolor.."
   }
 }
