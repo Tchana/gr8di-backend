@@ -9,14 +9,14 @@ class Message {
     String topic
     String messageBody
     Date dateSent = new Date()
-    String status
+    Status status
 
     static constraints = {
         senderEmail blank:false
         topic blank:false
         messageBody blank:false
         dateSent blank:false
-        status blank: false, inList: ["read", "unread", "deleted"]
+        status blank: false
 
     }
 }
