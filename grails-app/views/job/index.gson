@@ -1,0 +1,8 @@
+import gr8di.backend.Job
+
+model {
+	Iterable<Job> jobList
+}
+
+json tmpl.job(jobList ?: [])
+

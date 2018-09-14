@@ -1,5 +1,10 @@
 package gr8di.backend
 
+import grails.rest.Resource
+
+
+
+@Resource(uri='/job', formats=['json', 'xml'])
 class Job {
     String emailAddress
     String companyName
