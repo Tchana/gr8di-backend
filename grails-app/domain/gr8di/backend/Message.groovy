@@ -12,10 +12,6 @@ class Message {
     Status status
 
         static constraints = {
-        senderEmail blank:false, email: true
-        topic blank:false
-        messageBody blank:false
-        dateSent blank:false
-        status blank:false
+        senderEmail email: true
     }
 }
