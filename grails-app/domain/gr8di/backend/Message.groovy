@@ -9,11 +9,9 @@ class Message {
     String topic
     String messageBody
     Date dateSent = new Date()
+    Status status
 
-    static constraints = {
-        senderEmail blank:false
-        topic blank:false
-        messageBody blank:false
-        dateSent blank:false
+        static constraints = {
+        senderEmail email: true
     }
 }

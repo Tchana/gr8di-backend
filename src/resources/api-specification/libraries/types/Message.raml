@@ -1,0 +1,11 @@
+#%RAML 1.0 DataType
+type: object
+properties:
+  id: string # this will be a uuid
+  topic: string
+  messageBody: string
+  senderEmail: string
+  status:
+      type: string
+      enum: [read, unread, deleted]
+      required: true
