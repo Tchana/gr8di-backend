@@ -248,4 +248,64 @@ traits:
 
   put:
 
+/mentor:
+  get:
+    description: Get all mentors
+    queryParameters:
+      name:
+        type: string
+        required: true
+        example: "johndoe"
+    responses:
+      200:
+        description: OK
+        body:
+          application/json:
+            type: !include libraries/types/Mentor.raml
+            example: !include examples/mentor.json
+      404:
+        description: Not found
 
+  post:
+    description: Creates new Mentor
+    body:
+      type: !include libraries/types/Mentor.raml
+      example: !include examples/mentor.json
+    responses:
+      202:
+        description: Accepted
+      400: Bad Request
+        body:
+          application/json:
+            example: !include examples/error.json
+
+  put:
+    securedBy: basicAuth
+      description: Updates a Mentor
+      body:
+        type: !include libraries/types/Mentor.raml
+        example: !include examples/mentor.json
+      responses:
+        202:
+          description: Accepted
+        404:
+          description: Not found
+          body:
+            application/json:
+              type: !include libraries/types/Mentor.raml
+              example: !include examples/error.json
+  delete:
+    securedBy: basicAuth
+      description: Delete Mentor
+      body:
+         type: !include libraries/types/Mentor.raml
+        example: !include examples/mentor.json
+      responses:
+        202:
+          description: Accepted
+        404:
+          description: Not found
+          body:
+            application/json:
+              type: !include libraries/types/Mentor.raml
+              example: !include examples/error.json
