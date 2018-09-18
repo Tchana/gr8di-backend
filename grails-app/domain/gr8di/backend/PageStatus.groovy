@@ -1,7 +1,6 @@
 package gr8di.backend
 
-class PageStatus {
-
-    static constraints = {
-    }
+enum PageStatus {
+    active,
+    deleted
 }
