@@ -1,0 +1,7 @@
+import gr8di.backend.Page
+
+model {
+	Page page
+}
+
+json tmpl.page(page)

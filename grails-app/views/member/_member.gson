@@ -1,0 +1,7 @@
+import gr8di.backend.Member
+
+model {
+	Member member
+}
+
+json g.render(member, [resolveTemplate: false])

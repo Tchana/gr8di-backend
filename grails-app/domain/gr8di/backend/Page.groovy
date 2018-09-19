@@ -12,5 +12,6 @@ class Page {
     static constraints = {
         subtitle blank: true
         imgUrl blank: true
+        section nullable: true
     }
 }

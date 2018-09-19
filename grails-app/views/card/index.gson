@@ -1,0 +1,8 @@
+import gr8di.backend.Card
+
+model {
+	Iterable<Card> cardList
+}
+
+json tmpl.card(cardList ?: [])
+
