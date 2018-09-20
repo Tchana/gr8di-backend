@@ -3,9 +3,9 @@ package gr8di.backend
 import grails.validation.ValidationException
 import static org.springframework.http.HttpStatus.*
 
-class PageController {
+class P_ageController {
 
-    PageService pageService
+    P_ageService pageService
 
     static responseFormats = ['json', 'xml']
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
@@ -19,36 +19,36 @@ class PageController {
         respond pageService.get(id)
     }
 
-    def save(Page page) {
-        if (page == null) {
+    def save(P_age p_age) {
+        if (p_age == null) {
             render status: NOT_FOUND
             return
         }
 
         try {
-            pageService.save(page)
+            pageService.save(p_age)
         } catch (ValidationException e) {
-            respond page.errors, view:'create'
+            respond p_age.errors, view:'create'
             return
         }
 
-        respond page, [status: CREATED, view:"show"]
+        respond p_age, [status: CREATED, view:"show"]
     }
 
-    def update(Page page) {
-        if (page == null) {
+    def update(P_age p_age) {
+        if (p_age == null) {
             render status: NOT_FOUND
             return
         }
 
         try {
-            pageService.save(page)
+            pageService.save(p_age)
         } catch (ValidationException e) {
-            respond page.errors, view:'edit'
+            respond p_age.errors, view:'edit'
             return
         }
 
-        respond page, [status: OK, view:"show"]
+        respond p_age, [status: OK, view:"show"]
     }
 
     def delete(Long id) {

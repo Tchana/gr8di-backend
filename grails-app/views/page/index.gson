@@ -1,8 +1,0 @@
-import gr8di.backend.Page
-
-model {
-	Iterable<Page> pageList
-}
-
-json tmpl.page(pageList ?: [])
-

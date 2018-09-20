@@ -6,7 +6,7 @@ import grails.validation.ValidationException
 import grails.testing.web.controllers.ControllerUnitTest
 import grails.testing.gorm.DomainUnitTest
 
-class PageControllerSpec extends Specification implements ControllerUnitTest<PageController>, DomainUnitTest<Page> {
+class P_ageControllerSpec extends Specification implements ControllerUnitTest<P_ageController>, DomainUnitTest<P_age> {
 
     def populateValidParams(params) {
         assert params != null
@@ -18,7 +18,7 @@ class PageControllerSpec extends Specification implements ControllerUnitTest<Pag
 
     void "Test the index action returns the correct response"() {
         given:
-        controller.pageService = Mock(PageService) {
+        controller.pageService = Mock(P_ageService) {
             1 * list(_) >> []
             1 * count() >> 0
         }
@@ -43,8 +43,8 @@ class PageControllerSpec extends Specification implements ControllerUnitTest<Pag
 
     void "Test the save action correctly persists"() {
         given:
-        controller.pageService = Mock(PageService) {
-            1 * save(_ as Page)
+        controller.pageService = Mock(P_ageService) {
+            1 * save(_ as P_age)
         }
 
         when:
@@ -52,7 +52,7 @@ class PageControllerSpec extends Specification implements ControllerUnitTest<Pag
         request.contentType = JSON_CONTENT_TYPE
         request.method = 'POST'
         populateValidParams(params)
-        def page = new Page(params)
+        def page = new P_age(params)
         page.id = 1
 
         controller.save(page)
@@ -64,8 +64,8 @@ class PageControllerSpec extends Specification implements ControllerUnitTest<Pag
 
     void "Test the save action with an invalid instance"() {
         given:
-        controller.pageService = Mock(PageService) {
-            1 * save(_ as Page) >> { Page page ->
+        controller.pageService = Mock(P_ageService) {
+            1 * save(_ as P_age) >> { P_age page ->
                 throw new ValidationException("Invalid instance", page.errors)
             }
         }
@@ -73,7 +73,7 @@ class PageControllerSpec extends Specification implements ControllerUnitTest<Pag
         when:
         request.contentType = JSON_CONTENT_TYPE
         request.method = 'POST'
-        def page = new Page()
+        def page = new P_age()
         page.validate()
         controller.save(page)
 
@@ -84,7 +84,7 @@ class PageControllerSpec extends Specification implements ControllerUnitTest<Pag
 
     void "Test the show action with a null id"() {
         given:
-        controller.pageService = Mock(PageService) {
+        controller.pageService = Mock(P_ageService) {
             1 * get(null) >> null
         }
 
@@ -97,8 +97,8 @@ class PageControllerSpec extends Specification implements ControllerUnitTest<Pag
 
     void "Test the show action with a valid id"() {
         given:
-        controller.pageService = Mock(PageService) {
-            1 * get(2) >> new Page()
+        controller.pageService = Mock(P_ageService) {
+            1 * get(2) >> new P_age()
         }
 
         when:"A domain instance is passed to the show action"
@@ -121,8 +121,8 @@ class PageControllerSpec extends Specification implements ControllerUnitTest<Pag
 
     void "Test the update action correctly persists"() {
         given:
-        controller.pageService = Mock(PageService) {
-            1 * save(_ as Page)
+        controller.pageService = Mock(P_ageService) {
+            1 * save(_ as P_age)
         }
 
         when:
@@ -130,7 +130,7 @@ class PageControllerSpec extends Specification implements ControllerUnitTest<Pag
         request.contentType = JSON_CONTENT_TYPE
         request.method = 'PUT'
         populateValidParams(params)
-        def page = new Page(params)
+        def page = new P_age(params)
         page.id = 1
 
         controller.update(page)
@@ -142,8 +142,8 @@ class PageControllerSpec extends Specification implements ControllerUnitTest<Pag
 
     void "Test the update action with an invalid instance"() {
         given:
-        controller.pageService = Mock(PageService) {
-            1 * save(_ as Page) >> { Page page ->
+        controller.pageService = Mock(P_ageService) {
+            1 * save(_ as P_age) >> { P_age page ->
                 throw new ValidationException("Invalid instance", page.errors)
             }
         }
@@ -151,7 +151,7 @@ class PageControllerSpec extends Specification implements ControllerUnitTest<Pag
         when:
         request.contentType = JSON_CONTENT_TYPE
         request.method = 'PUT'
-        def page = new Page()
+        def page = new P_age()
         page.validate()
         controller.update(page)
 
@@ -172,7 +172,7 @@ class PageControllerSpec extends Specification implements ControllerUnitTest<Pag
 
     void "Test the delete action with an instance"() {
         given:
-        controller.pageService = Mock(PageService) {
+        controller.pageService = Mock(P_ageService) {
             1 * delete(2)
         }
 

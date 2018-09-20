@@ -3,7 +3,7 @@ package gr8di.backend
 import grails.testing.gorm.DomainUnitTest
 import spock.lang.Specification
 
-class PageSpec extends Specification implements DomainUnitTest<Page> {
+class P_ageSpec extends Specification implements DomainUnitTest<P_age> {
 
     def setup() {
     }

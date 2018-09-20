@@ -7,20 +7,20 @@ import org.hibernate.SessionFactory
 
 @Integration
 @Rollback
-class PageServiceSpec extends Specification {
+class P_ageServiceSpec extends Specification {
 
-    PageService pageService
+    P_ageService pageService
     SessionFactory sessionFactory
 
     private Long setupData() {
         // TODO: Populate valid domain instances and return a valid ID
-        //new Page(...).save(flush: true, failOnError: true)
-        //new Page(...).save(flush: true, failOnError: true)
-        //Page page = new Page(...).save(flush: true, failOnError: true)
-        //new Page(...).save(flush: true, failOnError: true)
-        //new Page(...).save(flush: true, failOnError: true)
+        //new P_age(...).save(flush: true, failOnError: true)
+        //new P_age(...).save(flush: true, failOnError: true)
+        //P_age p_age = new P_age(...).save(flush: true, failOnError: true)
+        //new P_age(...).save(flush: true, failOnError: true)
+        //new P_age(...).save(flush: true, failOnError: true)
         assert false, "TODO: Provide a setupData() implementation for this generated test suite"
-        //page.id
+        //p_age.id
     }
 
     void "test get"() {
@@ -34,7 +34,7 @@ class PageServiceSpec extends Specification {
         setupData()
 
         when:
-        List<Page> pageList = pageService.list(max: 2, offset: 2)
+        List<P_age> pageList = pageService.list(max: 2, offset: 2)
 
         then:
         pageList.size() == 2
@@ -65,7 +65,7 @@ class PageServiceSpec extends Specification {
     void "test save"() {
         when:
         assert false, "TODO: Provide a valid instance to save"
-        Page page = new Page()
+        P_age page = new P_age()
         pageService.save(page)
 
         then:

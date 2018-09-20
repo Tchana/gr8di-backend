@@ -1,6 +1,6 @@
 package gr8di.backend
 
-class Page {
+class P_age {
     String language
     String pageName
     String title

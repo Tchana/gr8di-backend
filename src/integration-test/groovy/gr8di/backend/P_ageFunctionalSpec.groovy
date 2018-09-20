@@ -2,15 +2,15 @@ package gr8di.backend
 
 import grails.testing.mixin.integration.Integration
 import grails.transaction.*
-import static grails.web.http.HttpHeaders.*
+
 import static org.springframework.http.HttpStatus.*
-import spock.lang.*
+
 import geb.spock.*
 import grails.plugins.rest.client.RestBuilder
 
 @Integration
 @Rollback
-class PageFunctionalSpec extends GebSpec {
+class P_ageFunctionalSpec extends GebSpec {
 
     RestBuilder getRestBuilder() {
         new RestBuilder()
@@ -60,7 +60,7 @@ class PageFunctionalSpec extends GebSpec {
         then:"The response is correct"
         response.status == CREATED.value()
         response.json.id
-        Page.count() == 1
+        P_age.count() == 1
     }
 
     void "Test the update action correctly updates an instance"() {
@@ -134,6 +134,6 @@ class PageFunctionalSpec extends GebSpec {
 
         then:"The response is correct"
         response.status == NO_CONTENT.value()        
-        !Page.get(id)
+        !P_age.get(id)
     }    
 }

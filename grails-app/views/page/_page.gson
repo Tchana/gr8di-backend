@@ -1,7 +1,0 @@
-import gr8di.backend.Page
-
-model {
-	Page page
-}
-
-json g.render(page, [resolveTemplate: false])

@@ -13,7 +13,7 @@ class BootStrap {
         def card1 = new Card(imgUrl: "image", header: "card", description: "a card", footer: "Bottom card").save()
         //def section1 = new Section(title: "Section1", description: "section test", pitch: pitch1, card: card1, member: member1).save()
 
-        new Page(language: "UK", pageName: "index page", title: "Gr8di intro", subtitle: "gr8disub", imgUrl: "pageurlimage",section: new Section(title: "Section1", description: "section test", pitch: pitch1, card: card1, member: member1), pageStatus: PageStatus.active).save()
+        new P_age(language: "UK", pageName: "index p_age", title: "Gr8di intro", subtitle: "gr8disub", imgUrl: "pageurlimage",section: new Section(title: "Section1", description: "section test", pitch: pitch1, card: card1, member: member1), pageStatus: PageStatus.active).save()
     }
 
     def destroy = {
