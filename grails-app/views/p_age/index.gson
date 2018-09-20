@@ -1,8 +1,0 @@
-import gr8di.backend.P_age
-
-model {
-	Iterable<P_age> p_ageList
-}
-
-json tmpl.p_age(p_ageList ?: [])
-

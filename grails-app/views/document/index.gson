@@ -1,0 +1,8 @@
+import gr8di.backend.Document
+
+model {
+	Iterable<Document> documentList
+}
+
+json tmpl.document(documentList ?: [])
+

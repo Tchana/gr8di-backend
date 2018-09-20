@@ -6,7 +6,7 @@ class Section {
     Pitch pitch
     Card card
     Member member
-    static belongsTo = [page: P_age]
+    static belongsTo = [document: Document]
 
     static constraints = {
         title blank: true

@@ -26,11 +26,11 @@ class UrlMappings {
         post "/jobs"(controller:'job', action:"save")
         put "/jobs/$id"(controller:'job', action:"update")
 
-        delete "/p_ages/$id"(controller:'p_age', action:"delete")
-        get "/p_ages"(controller:'p_age', action:"index")
-        get "/p_ages/$id"(controller:'p_age', action:"show")
-        post "/p_ages"(controller:'p_age', action:"save")
-        put "/p_ages/$id"(controller:'p_age', action:"update")
+        delete "/pages/$id"(controller:'document', action:"delete")
+        get "/pages"(controller:'document', action:"index")
+        get "/pages/$id"(controller:'document', action:"show")
+        post "/pages"(controller:'document', action:"save")
+        put "/pages/$id"(controller:'document', action:"update")
 
     }
 }

@@ -10,7 +10,7 @@ import grails.plugins.rest.client.RestBuilder
 
 @Integration
 @Rollback
-class P_ageFunctionalSpec extends GebSpec {
+class DocumentFunctionalSpec extends GebSpec {
 
     RestBuilder getRestBuilder() {
         new RestBuilder()
@@ -60,7 +60,7 @@ class P_ageFunctionalSpec extends GebSpec {
         then:"The response is correct"
         response.status == CREATED.value()
         response.json.id
-        P_age.count() == 1
+        Document.count() == 1
     }
 
     void "Test the update action correctly updates an instance"() {
@@ -134,6 +134,6 @@ class P_ageFunctionalSpec extends GebSpec {
 
         then:"The response is correct"
         response.status == NO_CONTENT.value()        
-        !P_age.get(id)
+        !Document.get(id)
     }    
 }

@@ -1,6 +1,9 @@
 package gr8di.backend
 
-class P_age {
+import grails.rest.Resource
+
+@Resource(uri='/documents', formats=['json', 'xml'])
+class Document {
     String language
     String pageName
     String title

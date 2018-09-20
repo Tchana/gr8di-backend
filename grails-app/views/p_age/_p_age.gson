@@ -1,7 +1,0 @@
-import gr8di.backend.P_age
-
-model {
-	P_age p_age
-}
-
-json g.render(p_age, [resolveTemplate: false])
