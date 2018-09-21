@@ -1,0 +1,7 @@
+import gr8di.backend.Document
+
+model {
+	Document document
+}
+
+json g.render(document, [resolveTemplate: false])

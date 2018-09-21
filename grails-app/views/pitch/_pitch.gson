@@ -1,0 +1,7 @@
+import gr8di.backend.Pitch
+
+model {
+	Pitch pitch
+}
+
+json g.render(pitch, [resolveTemplate: false])

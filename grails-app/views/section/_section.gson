@@ -1,0 +1,7 @@
+import gr8di.backend.Section
+
+model {
+	Section section
+}
+
+json g.render(section, [resolveTemplate: false])

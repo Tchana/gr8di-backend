@@ -1,0 +1,29 @@
+#%RAML 1.0 DataType
+type: object
+properties:
+ id?: string
+ name: string
+ groovyExperience:
+   type: string
+   enum: [<1, 1-3, 3-5, 5+]
+   required: true
+ lib_frmwrk_tools:
+   type: string
+   enum: [grails, spring Boot, Ratpack, VertX, Spock, Google cloud Platform, AWS deployments, Cloud Foundry, Heroku,
+         Intellij, Eclipse, Netbeans, Windows OS, Mac OS, Linux, Other]
+   required: true
+ language:
+   type: string
+   enum: [English, French, other]
+   required: true
+ time_zone: string
+ work_days: string
+ time_per_week:
+  type: string
+  enum: [<1, 1-3, 4-6, 7-10, Other]
+ timeOfstart:
+  type: string
+  enum: [immediately, Jan 2, Jan 15, Feb 1, Other]
+  required: true
+ pastProAge: string
+ specialSkills: string

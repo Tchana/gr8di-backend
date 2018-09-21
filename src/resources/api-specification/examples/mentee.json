@@ -1,0 +1,15 @@
+{
+  "mentee": {
+    "id?": "anyID2432",
+    "name": "John/jane doe",
+    "groovyExperience": "3 day bootcamp, multi-week course",
+    "lib_frmwrk_tools": "grails, spring Boot, Ratpack",
+    "language(B1)": "English, French",
+    "time_zone": "GMT +1",
+    "work_days": "Friday nights",
+    "time_per_week": "1-3",
+    "timeOfStart": "Immediately",
+    "specialSkills": "grails api dev",
+    "goal": "Work on project"
+  }
+}
