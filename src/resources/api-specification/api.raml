@@ -45,7 +45,7 @@ traits:
             body:
               application/json:
                 type: !include libraries/types/examplepage.raml
-                example: !include examples/page.json
+                example: !include examples/document.json
           204:
             description: No Content
           400:
@@ -59,7 +59,7 @@ traits:
       description: Update a new examplepage
       body:
         type: !include libraries/types/examplepage.raml
-        example: !include examples/page.json
+        example: !include examples/document.json
       responses:
         202:
           description: Accepted
@@ -75,7 +75,7 @@ traits:
       description: Delete examplepage
       body:
         type: !include libraries/types/examplepage.raml
-        example: !include examples/page.json
+        example: !include examples/document.json
       responses:
         202:
           description: Accepted
@@ -91,7 +91,7 @@ traits:
     description: Creates a new examplepage
     body:
       type: !include libraries/types/examplepage.raml
-      example: !include examples/page.json
+      example: !include examples/document.json
     responses:
       202:
         description: Accepted
