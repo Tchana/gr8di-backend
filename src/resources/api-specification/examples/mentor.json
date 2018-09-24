@@ -1,0 +1,15 @@
+{
+  "mentor": {
+    "id?": "anyiD4820",
+    "name": "john/jane doe",
+    "groovyExperience": "3-5",
+    "lib_frmwrk_tools": "grails, spring Boot, Ratpack",
+    "language": "English, French",
+    "time_zone": "GMT +2",
+    "work_days": "Monday night",
+    "time_per_week": "4-6",
+    "timeOfStart": "Immediately",
+    "pastProAge": "Gr8dy diversity, 16-18",
+    "specialSkills": "Geb with groovy"
+}
+}

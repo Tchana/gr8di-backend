@@ -1,0 +1,8 @@
+import gr8di.backend.Member
+
+model {
+	Iterable<Member> memberList
+}
+
+json tmpl.member(memberList ?: [])
+
