@@ -1,0 +1,8 @@
+import gr8di.backend.Section
+
+model {
+	Iterable<Section> sectionList
+}
+
+json tmpl.section(sectionList ?: [])
+

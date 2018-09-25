@@ -25,5 +25,12 @@ class UrlMappings {
         get "/jobs/$id"(controller:'job', action:"show")
         post "/jobs"(controller:'job', action:"save")
         put "/jobs/$id"(controller:'job', action:"update")
+
+        delete "/pages/$id"(controller:'document', action:"delete")
+        get "/pages"(controller:'document', action:"index")
+        get "/pages/$id"(controller:'document', action:"show")
+        post "/pages"(controller:'document', action:"save")
+        put "/pages/$id"(controller:'document', action:"update")
+
     }
 }

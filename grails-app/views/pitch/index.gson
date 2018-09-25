@@ -1,0 +1,8 @@
+import gr8di.backend.Pitch
+
+model {
+	Iterable<Pitch> pitchList
+}
+
+json tmpl.pitch(pitchList ?: [])
+

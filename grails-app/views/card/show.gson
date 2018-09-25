@@ -1,0 +1,7 @@
+import gr8di.backend.Card
+
+model {
+	Card card
+}
+
+json tmpl.card(card)

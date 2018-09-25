@@ -18,7 +18,7 @@ traits:
   sortable: !include traits/sortable.raml
 
 
-/pages:
+/examplepages:
   /{language}:
     get:
       description: gets all pages
@@ -26,7 +26,7 @@ traits:
           200:
             body:
               application/json:
-                type: !include libraries/types/Page.raml
+                type: !include libraries/types/examplepage.raml
                 example: !include examples/pages.json
           204:
             description: No Content
@@ -39,12 +39,12 @@ traits:
   /{id}:
     get:
     securedBy: basicAuth
-      description: get a page by its id
+      description: get a examplepage by its id
         responses:
           200:
             body:
               application/json:
-                type: !include libraries/types/Page.raml
+                type: !include libraries/types/examplepage.raml
                 example: !include examples/page.json
           204:
             description: No Content
@@ -56,9 +56,9 @@ traits:
 
     put:
       securedBy: basicAuth
-      description: Update a new page
+      description: Update a new examplepage
       body:
-        type: !include libraries/types/Page.raml
+        type: !include libraries/types/examplepage.raml
         example: !include examples/page.json
       responses:
         202:
@@ -72,9 +72,9 @@ traits:
 
     delete:
       securedBy: basicAuth
-      description: Delete page
+      description: Delete examplepage
       body:
-        type: !include libraries/types/Page.raml
+        type: !include libraries/types/examplepage.raml
         example: !include examples/page.json
       responses:
         202:
@@ -88,9 +88,9 @@ traits:
 
   post:
     securedBy: basicAuth
-    description: Creates a new page
+    description: Creates a new examplepage
     body:
-      type: !include libraries/types/Page.raml
+      type: !include libraries/types/examplepage.raml
       example: !include examples/page.json
     responses:
       202:
@@ -233,7 +233,7 @@ traits:
   post:
     /{statsId}:
       get:
-        description: displays the statistics for a particular page
+        description: displays the statistics for a particular examplepage
         responses:
           200:
             body:
