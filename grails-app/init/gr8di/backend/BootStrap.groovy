@@ -14,6 +14,10 @@ class BootStrap {
         //def section1 = new Section(title: "Section1", description: "section test", pitch: pitch1, card: card1, member: member1).save()
 
         new Document(language: "UK", pageName: "index Document", title: "Gr8di intro", subtitle: "gr8disub", imgUrl: "pageurlimage",section: new Section(title: "Section1", description: "section test", pitch: pitch1, card: card1, member: member1), pageStatus: PageStatus.active).save(failOnError: true)
+
+        new Mentor( mentorName: "Debenick", workDays: "Monday",timeZone: "GMT+1", menteeAgeRange: "Groovy,12",specialSkills: "3D", groovyExp: GroovyExp.plusFive, libFrmwrkTools: LibFrmwrkTools.Ratpack, language: Language.English, hrsPerWeek: HrsPerWeek.FourToSix, timeOfStart: TimeOfStart.immediately)
+                .addToMentee(new Mentee(menteeName: "Gisele", timeZone: "Gmt", workDays: "Monday", specialSkills: "C lang", menteeExp: MenteeExp.sixMonthCourse, libFrmwrkTools: LibFrmwrkTools.grails, language: Language.English, hrsPerWeek: HrsPerWeek.FourToSix, timeOfStart: TimeOfStart.immediately,goal: Goal.AskForPaidJob))
+                .addToMentee(new Mentee(menteeName: "Gisele", timeZone: "Gmt", workDays: "Monday", specialSkills: "C lang", menteeExp: MenteeExp.sixMonthCourse, libFrmwrkTools: LibFrmwrkTools.grails, language: Language.English, hrsPerWeek: HrsPerWeek.FourToSix, timeOfStart: TimeOfStart.immediately,goal: Goal.AskForPaidJob)).save()
     }
 
     def destroy = {
