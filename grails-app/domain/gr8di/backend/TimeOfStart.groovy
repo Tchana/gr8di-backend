@@ -1,7 +1,9 @@
 package gr8di.backend
 
-class TimeOfStart {
-
-    static constraints = {
-    }
+enum TimeOfStart {
+    immediately,
+    Jan2,
+    Jan15,
+    Feb1,
+    Other
 }

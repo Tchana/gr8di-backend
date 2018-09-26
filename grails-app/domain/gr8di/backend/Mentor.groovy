@@ -11,6 +11,7 @@ class Mentor {
     Language language
     HrsPerWeek hrsPerWeek
     TimeOfStart timeOfStart
+    static hasMany = [mentee: Mentee]
 
 
 
