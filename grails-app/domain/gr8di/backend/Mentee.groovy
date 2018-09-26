@@ -5,15 +5,12 @@ class Mentee {
     String timeZone
     String workDays
     String specialSkills
-    GroovyExp groovyExp
+    MenteeExp menteeExp
     LibFrmwrkTools libFrmwrkTools
     Language language
     HrsPerWeek hrsPerWeek
     TimeOfStart timeOfStart
     Goal goal
-
-
-
 
     static constraints = {
     }

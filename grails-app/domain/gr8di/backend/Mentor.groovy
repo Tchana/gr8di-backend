@@ -13,8 +13,6 @@ class Mentor {
     TimeOfStart timeOfStart
     static hasMany = [mentee: Mentee]
 
-
-
     static constraints = {
     }
 }
