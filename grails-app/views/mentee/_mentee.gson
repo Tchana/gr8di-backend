@@ -1,0 +1,7 @@
+import gr8di.backend.Mentee
+
+model {
+	Mentee mentee
+}
+
+json g.render(mentee, [resolveTemplate: false])

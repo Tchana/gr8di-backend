@@ -7,37 +7,37 @@ import org.hibernate.SessionFactory
 
 @Integration
 @Rollback
-class DocumentServiceSpec extends Specification {
+class MentorServiceSpec extends Specification {
 
-    DocumentService documentService
+    MentorService mentorService
     SessionFactory sessionFactory
 
     private Long setupData() {
         // TODO: Populate valid domain instances and return a valid ID
-        //new Document(...).save(flush: true, failOnError: true)
-        //new Document(...).save(flush: true, failOnError: true)
-        //Document document = new Document(...).save(flush: true, failOnError: true)
-        //new Document(...).save(flush: true, failOnError: true)
-        //new Document(...).save(flush: true, failOnError: true)
+        //new Mentor(...).save(flush: true, failOnError: true)
+        //new Mentor(...).save(flush: true, failOnError: true)
+        //Mentor mentor = new Mentor(...).save(flush: true, failOnError: true)
+        //new Mentor(...).save(flush: true, failOnError: true)
+        //new Mentor(...).save(flush: true, failOnError: true)
         assert false, "TODO: Provide a setupData() implementation for this generated test suite"
-        //document.id
+        //mentor.id
     }
 
     void "test get"() {
         setupData()
 
         expect:
-        documentService.get(1) != null
+        mentorService.get(1) != null
     }
 
     void "test list"() {
         setupData()
 
         when:
-        List<Document> documentList = documentService.list(max: 2, offset: 2)
+        List<Mentor> mentorList = mentorService.list(max: 2, offset: 2)
 
         then:
-        documentList.size() == 2
+        mentorList.size() == 2
         assert false, "TODO: Verify the correct instances are returned"
     }
 
@@ -45,30 +45,30 @@ class DocumentServiceSpec extends Specification {
         setupData()
 
         expect:
-        documentService.count() == 5
+        mentorService.count() == 5
     }
 
     void "test delete"() {
-        Long documentId = setupData()
+        Long mentorId = setupData()
 
         expect:
-        documentService.count() == 5
+        mentorService.count() == 5
 
         when:
-        documentService.delete(documentId)
+        mentorService.delete(mentorId)
         sessionFactory.currentSession.flush()
 
         then:
-        documentService.count() == 4
+        mentorService.count() == 4
     }
 
     void "test save"() {
         when:
         assert false, "TODO: Provide a valid instance to save"
-        Document document = new Document()
-        documentService.save(document)
+        Mentor mentor = new Mentor()
+        mentorService.save(mentor)
 
         then:
-        document.id != null
+        mentor.id != null
     }
 }
