@@ -1,0 +1,7 @@
+import gr8di.backend.Mentor
+
+model {
+	Mentor mentor
+}
+
+json tmpl.mentor(mentor)

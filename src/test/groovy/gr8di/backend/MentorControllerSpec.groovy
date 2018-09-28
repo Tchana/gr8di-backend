@@ -6,7 +6,7 @@ import grails.validation.ValidationException
 import grails.testing.web.controllers.ControllerUnitTest
 import grails.testing.gorm.DomainUnitTest
 
-class documentControllerSpec extends Specification implements ControllerUnitTest<DocumentController>, DomainUnitTest<Document> {
+class MentorControllerSpec extends Specification implements ControllerUnitTest<MentorController>, DomainUnitTest<Mentor> {
 
     def populateValidParams(params) {
         assert params != null
@@ -18,7 +18,7 @@ class documentControllerSpec extends Specification implements ControllerUnitTest
 
     void "Test the index action returns the correct response"() {
         given:
-        controller.documentService = Mock(examplepageService) {
+        controller.mentorService = Mock(MentorService) {
             1 * list(_) >> []
             1 * count() >> 0
         }
@@ -43,8 +43,8 @@ class documentControllerSpec extends Specification implements ControllerUnitTest
 
     void "Test the save action correctly persists"() {
         given:
-        controller.documentService = Mock(examplepageService) {
-            1 * save(_ as Document)
+        controller.mentorService = Mock(MentorService) {
+            1 * save(_ as Mentor)
         }
 
         when:
@@ -52,10 +52,10 @@ class documentControllerSpec extends Specification implements ControllerUnitTest
         request.contentType = JSON_CONTENT_TYPE
         request.method = 'POST'
         populateValidParams(params)
-        def page = new Document(params)
-        page.id = 1
+        def mentor = new Mentor(params)
+        mentor.id = 1
 
-        controller.save(page)
+        controller.save(mentor)
 
         then:
         response.status == CREATED.value()
@@ -64,18 +64,18 @@ class documentControllerSpec extends Specification implements ControllerUnitTest
 
     void "Test the save action with an invalid instance"() {
         given:
-        controller.documentService = Mock(examplepageService) {
-            1 * save(_ as Document) >> { Document page ->
-                throw new ValidationException("Invalid instance", page.errors)
+        controller.mentorService = Mock(MentorService) {
+            1 * save(_ as Mentor) >> { Mentor mentor ->
+                throw new ValidationException("Invalid instance", mentor.errors)
             }
         }
 
         when:
         request.contentType = JSON_CONTENT_TYPE
         request.method = 'POST'
-        def page = new Document()
-        page.validate()
-        controller.save(page)
+        def mentor = new Mentor()
+        mentor.validate()
+        controller.save(mentor)
 
         then:
         response.status == UNPROCESSABLE_ENTITY.value()
@@ -84,7 +84,7 @@ class documentControllerSpec extends Specification implements ControllerUnitTest
 
     void "Test the show action with a null id"() {
         given:
-        controller.documentService = Mock(examplepageService) {
+        controller.mentorService = Mock(MentorService) {
             1 * get(null) >> null
         }
 
@@ -97,8 +97,8 @@ class documentControllerSpec extends Specification implements ControllerUnitTest
 
     void "Test the show action with a valid id"() {
         given:
-        controller.documentService = Mock(examplepageService) {
-            1 * get(2) >> new Document()
+        controller.mentorService = Mock(MentorService) {
+            1 * get(2) >> new Mentor()
         }
 
         when:"A domain instance is passed to the show action"
@@ -121,8 +121,8 @@ class documentControllerSpec extends Specification implements ControllerUnitTest
 
     void "Test the update action correctly persists"() {
         given:
-        controller.documentService = Mock(examplepageService) {
-            1 * save(_ as Document)
+        controller.mentorService = Mock(MentorService) {
+            1 * save(_ as Mentor)
         }
 
         when:
@@ -130,10 +130,10 @@ class documentControllerSpec extends Specification implements ControllerUnitTest
         request.contentType = JSON_CONTENT_TYPE
         request.method = 'PUT'
         populateValidParams(params)
-        def page = new Document(params)
-        page.id = 1
+        def mentor = new Mentor(params)
+        mentor.id = 1
 
-        controller.update(page)
+        controller.update(mentor)
 
         then:
         response.status == OK.value()
@@ -142,18 +142,18 @@ class documentControllerSpec extends Specification implements ControllerUnitTest
 
     void "Test the update action with an invalid instance"() {
         given:
-        controller.documentService = Mock(examplepageService) {
-            1 * save(_ as Document) >> { Document page ->
-                throw new ValidationException("Invalid instance", page.errors)
+        controller.mentorService = Mock(MentorService) {
+            1 * save(_ as Mentor) >> { Mentor mentor ->
+                throw new ValidationException("Invalid instance", mentor.errors)
             }
         }
 
         when:
         request.contentType = JSON_CONTENT_TYPE
         request.method = 'PUT'
-        def page = new Document()
-        page.validate()
-        controller.update(page)
+        def mentor = new Mentor()
+        mentor.validate()
+        controller.update(mentor)
 
         then:
         response.status == UNPROCESSABLE_ENTITY.value()
@@ -172,7 +172,7 @@ class documentControllerSpec extends Specification implements ControllerUnitTest
 
     void "Test the delete action with an instance"() {
         given:
-        controller.documentService = Mock(examplepageService) {
+        controller.mentorService = Mock(MentorService) {
             1 * delete(2)
         }
 

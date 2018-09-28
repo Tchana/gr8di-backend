@@ -1,0 +1,8 @@
+import gr8di.backend.Mentee
+
+model {
+	Iterable<Mentee> menteeList
+}
+
+json tmpl.mentee(menteeList ?: [])
+
